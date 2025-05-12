@@ -1,0 +1,238 @@
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background-color: #0d0d0d;
+  color: white;
+  overflow-x: hidden;
+}
+
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+audio {
+  display: none;
+}
+
+header {
+  position: relative;
+  z-index: 2;
+  background: #111;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px #00ffcc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-logo h1 {
+  font-size: 2.2rem;
+  color: #00ffcc;
+  margin: 0;
+  text-shadow: 0 0 10px #00ffee;
+}
+
+.logo-mini {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 0, 255, 0.4);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  color: #ff007f;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ff3399;
+  text-shadow: 0 0 5px #ff3399;
+}
+
+main {
+  position: relative;
+  z-index: 2;
+  padding: 50px 20px;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #00ffcc;
+  margin-bottom: 15px;
+  text-shadow: 0 0 5px #00ffcc;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contact-item {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-channel {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+}
+
+.contact-item h3 {
+  font-size: 1.6rem;
+  color: #00ffcc;
+  margin-bottom: 10px;
+}
+
+.contact-item p {
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+.contact-item a {
+  color: #ff3399;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+  color: #ff66b2;
+}
+
+.contact-channel:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+}
+
+.contact-channel h3 {
+  font-size: 1.6rem;
+  color: #00ffcc;
+  margin-bottom: 10px;
+}
+
+.contact-channel p {
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+.contact-channel a {
+  color: #ff3399;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.contact-channel a:hover {
+  color: #ff66b2;
+}
+
+.intro {
+  background-color: #111;
+  padding: 40px 20px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+}
+
+.intro p {
+  font-size: 1.2rem;
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+.channel-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  background-color: #ff007f;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s ease;
+  box-shadow: 0 0 10px #ff3399;
+}
+
+.channel-btn:hover {
+  background-color: #ff3399;
+  box-shadow: 0 0 15px #ff66b2;
+}
+
+.features {
+  background-color: #1a1a1a;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.15);
+}
+
+.features h3 {
+  font-size: 1.8rem;
+  color: #00ffcc;
+  margin-bottom: 15px;
+  text-shadow: 0 0 5px #00ffee;
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.features li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  color: #ccc;
+  padding-left: 20px;
+  position: relative;
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #0d0d0d;
+  color: #999;
+  font-size: 0.9rem;
+  border-top: 1px solid #222;
+}
+
+
+@media screen and (max-width: 768px) {
+  .contact-info {
+    gap: 20px;
+  }
+}
